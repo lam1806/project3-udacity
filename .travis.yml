@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-  - 13
+  - 12
 
 services:
   - docker
@@ -11,7 +11,7 @@ install:
 
 # Scripts to be run such as tests
 before_script:
-  - echo "no testss"
+  - echo "no testsss"
 
 script:
   - docker --version
