@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-  - 12
+  - 13
 
 services:
   - docker
@@ -34,7 +34,7 @@ after_success:
   - docker push lamnt18061999/udagram-frontend:local
   - docker push lamnt18061999/udagram-reverseproxy:v4a
   
-  - docker pull lamnt18061999/udagram-api-user:v1
-  - docker pull lamnt18061999/udagram-api-feed:v1
-  - docker pull lamnt18061999/udagram-frontend:v1
-  - docker pull lamnt18061999/udagram-reverseproxy:v1
+  - docker pull lamnt18061999/udagram-api-user:v4a
+  - docker pull lamnt18061999/udagram-api-feed:v4a
+  - docker pull lamnt18061999/udagram-frontend:local
+  - docker pull lamnt18061999/udagram-reverseproxy:v4a
