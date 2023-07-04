@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: env-configmap
+  namespace: default
+data:
+  AWS_BUCKET: lamnt63
+  AWS_PROFILE: default
+  AWS_REGION: us-east-1
+  JWT_SECRET: dGVzdGluZw==
+  POSTGRES_DB: postgres
+  POSTGRES_HOST: lamnt63-project3.caemgoi2loib.us-east-1.rds.amazonaws.com
+  URL: http://localhost:8100
+  NODE_OPTIONS: --max-old-space-size=1024
+metadata:
+  name: env-config
